@@ -1,0 +1,511 @@
+﻿<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#005356" />
+    <meta name="description" content="Explore Praia do Forte through locally guided experiences, wild coastlines, and the stories of Bahia." />
+    <title>Praia do Forte | Travel like a local</title>
+    <link rel="preload" href="assets/hero-google-photos.jpg" as="image" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="art-direction.css" />
+    <script src="app.js" defer></script>
+    <script src="enhancements.js" defer></script>
+  </head>
+  <body class="is-loading">
+    <noscript><style>.site-loader { display: none; } body.is-loading { overflow: visible; }</style></noscript>
+    <div class="site-loader" role="status" aria-live="polite">
+      <svg class="loader-art" viewBox="0 0 200 130" aria-hidden="true">
+        <g class="loader-surfer">
+          <circle cx="100" cy="34" r="7" />
+          <path d="M100 41 L98 68 M98 68 L86 90 M98 68 L112 90 M99 50 L79 42 M99 50 L121 56" />
+          <path class="loader-board" d="M62 93 Q100 100 140 92 Q100 86 62 93 Z" />
+        </g>
+        <path class="loader-wave" d="M0 104 q12.5 -9 25 0 t25 0 t25 0 t25 0 t25 0 t25 0 t25 0 t25 0 t25 0 t25 0 t25 0 t25 0" />
+      </svg>
+      <p class="loader-text">Catching the wave…</p>
+    </div>
+    <div class="scroll-progress" aria-hidden="true"></div>
+
+    <header class="site-header" id="top">
+      <a class="brand" href="#top" aria-label="Praia do Forte, back to top">
+        <img src="assets/raw-02.png" alt="" width="44" height="44" />
+        <span>PRAIA DO FORTE<small>TURISMO</small></span>
+      </a>
+      <nav class="main-nav" id="main-nav" aria-label="Main navigation">
+        <a href="#about">Our story</a>
+        <a href="#experiences">Experiences</a>
+        <a href="#discover">Discover Bahia</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <div class="header-actions">
+        <a class="whatsapp-cta" href="https://wa.me/34644708255" target="_blank" rel="noopener" aria-label="Start a WhatsApp conversation with Praia do Forte Turismo" title="WhatsApp">
+          <svg class="whatsapp-mark" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+            <path
+              fill="currentColor"
+              d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413z"
+            />
+          </svg>
+        </a>
+        <button class="language-toggle" id="language-toggle" type="button" aria-label="Change language to Portuguese" title="Português"></button>
+      </div>
+      <button class="menu-toggle" type="button" aria-label="Open menu" aria-controls="main-nav" aria-expanded="false"><span></span><span></span></button>
+    </header>
+
+    <main>
+      <section class="hero" aria-labelledby="hero-title">
+        <video class="hero-image" src="assets/hero-vid.mp4" poster="assets/google-photos/photo-61.jpg" autoplay muted loop playsinline preload="auto" aria-label="A lush cove and beach in Bahia"></video>
+        <div class="hero-shade"></div>
+        <div class="hero-meta"><span>BAHIA, BRAZIL</span><span>12°34′ S / 38°00′ W</span></div>
+        <div class="hero-side-note" aria-hidden="true">A DIFFERENT KIND OF ESCAPE / 2026</div>
+        <div class="hero-content">
+          <p class="eyebrow hero-eyebrow">Rooted here. Made for you.</p>
+          <h1 id="hero-title"><span>Feel the place.</span><em>Live the story.</em></h1>
+          <p class="hero-subtitle">Praia do Forte, through the eyes of the people who call it home.</p>
+        </div>
+        <div class="hero-edition" aria-hidden="true"><span>01</span><span> / 06</span><i></i>THE COAST IS CALLING</div>
+        <form class="search-panel" id="search-form">
+          <label class="search-field">
+            <span>Experience</span>
+            <select id="search-category" name="category">
+              <option value="all">What moves you?</option>
+              <option value="sea">Sea</option>
+              <option value="local">Culture & flavor</option>
+              <option value="nature">Adventure & nature</option>
+            </select>
+          </label>
+          <label class="search-field">
+            <span>When</span>
+            <input id="search-date" name="date" type="date" aria-label="Preferred date" />
+          </label>
+          <label class="search-field">
+            <span>Travelers</span>
+            <select id="search-guests" name="guests">
+              <option value="1">1 traveler</option>
+              <option value="2" selected>2 travelers</option>
+              <option value="3">3 travelers</option>
+              <option value="4">4 travelers</option>
+              <option value="5">5 travelers</option>
+              <option value="6">6 travelers</option>
+            </select>
+          </label>
+          <button class="search-button" type="submit">Find your moment <span aria-hidden="true">↗</span></button>
+        </form>
+        <a class="scroll-cue" href="#about"><span class="scroll-cue-line"></span> SCROLL TO EXPLORE</a>
+      </section>
+
+      <div class="ticker" aria-hidden="true">
+        <div class="ticker-track">
+          PRAIA DO FORTE <span>✦</span> BAHIA LIVES HERE <span>✦</span> PRAIA DO FORTE <span>✦</span> BAHIA LIVES HERE <span>✦</span> PRAIA DO FORTE <span>✦</span> BAHIA LIVES HERE
+          <span>✦</span>
+        </div>
+      </div>
+
+      <section class="intro section-shell" id="about" aria-labelledby="intro-title">
+        <div class="intro-story">
+          <p class="eyebrow reveal">Welcome to our corner of the world / 01</p>
+          <h2 id="intro-title" class="reveal">You came for<br />the view.<br /><em>Stay for the feeling.</em></h2>
+          <p class="intro-copy reveal">Out here, the best stories are shared by the people who live them. We connect you to the coastline, culture and quiet magic of Praia do Forte, one unforgettable moment at a time.</p>
+          <a class="text-link reveal" href="#fabio">Meet your local guide <span aria-hidden="true">↗</span></a>
+        </div>
+        <div class="intro-gallery reveal" aria-label="Scenes from Praia do Forte">
+          <figure class="intro-photo intro-photo-main">
+            <img src="assets/hero-google-photos.jpg" alt="Sunlit cove at Praia do Forte" loading="lazy" />
+            <figcaption>01 / THE COAST</figcaption>
+          </figure>
+          <figure class="intro-photo intro-photo-small">
+            <img src="assets/activity-salvador.jpg" alt="Historic Salvador and Bahia culture" loading="lazy" />
+            <figcaption>02 / THE VILLAGE</figcaption>
+          </figure>
+          <span class="intro-stamp" aria-hidden="true">MADE<br />OF<br />MOMENTS <b>✦</b></span>
+        </div>
+      </section>
+
+      <section class="fabio-section" id="fabio" aria-labelledby="fabio-title">
+        <div class="fabio-copy reveal">
+          <p class="eyebrow eyebrow-light">The person behind the place / 01</p>
+          <h2 id="fabio-title">Meet <em>Fabio.</em></h2>
+          <p>Born and raised in Praia do Forte, Fabio knows the village by heart and the sea by instinct. His favorite places aren't on a map. They're the ones you discover together.</p>
+          <blockquote>“We make your stay a local and authentic experience.”</blockquote>
+          <a class="pill-link" href="#experiences">Explore with Fabio <span aria-hidden="true">↗</span></a>
+        </div>
+        <div class="fabio-visual reveal">
+          <img src="assets/raw-03.png" alt="Local cultural experience in Bahia" loading="lazy" />
+          <span class="image-note">LOCAL PEOPLE. REAL STORIES.</span>
+          <span class="fabio-photo-index" aria-hidden="true">THE PEOPLE / 01</span>
+        </div>
+        <div class="fabio-side-label" aria-hidden="true">HERE, EVERYONE HAS A STORY</div>
+      </section>
+
+      <section class="discover-section section-shell" id="discover" aria-labelledby="discover-title">
+        <div class="discover-copy reveal">
+          <p class="eyebrow">Explore beyond the postcard / 02</p>
+          <h2 id="discover-title">A little wild.<br /><em>A lot of wonder.</em></h2>
+          <p>From warm Atlantic waters to the pulse of the village, every path leads somewhere worth remembering. Follow your curiosity. We'll take care of the rest.</p>
+          <a class="button button-orange" href="#experiences">Find your experience <span aria-hidden="true">↗</span></a>
+        </div>
+        <div class="map-wrap reveal">
+          <img src="assets/raw-06.png" alt="Illustrated map of Praia do Forte experiences along the coast" loading="lazy" />
+          <span class="map-caption">Your next story starts here <span aria-hidden="true">↗</span></span>
+        </div>
+      </section>
+
+      <section class="tide-section" id="tide" aria-labelledby="tide-title">
+        <canvas class="tide-canvas" id="tide-canvas" aria-hidden="true"></canvas>
+        <div class="tide-shade" aria-hidden="true"></div>
+        <div class="tide-inner section-shell">
+          <div class="tide-copy reveal">
+            <p class="eyebrow eyebrow-light">The coast is alive / 03</p>
+            <h2 id="tide-title">The sea is never<br /><em>the same twice.</em></h2>
+            <p>Every tide brings a new perspective. Slow down, feel the rhythm, and let Bahia surprise you.</p>
+          </div>
+          <div class="tide-bottom">
+            <div class="tide-modes" role="group" aria-label="Tide intensity">
+              <button type="button" class="tide-mode is-active" data-tide-mode="calm" aria-pressed="true">Calm</button>
+              <button type="button" class="tide-mode" data-tide-mode="wild" aria-pressed="false">Wild</button>
+            </div>
+            <span class="tide-reading">ATLANTIC / PRAIA DO FORTE</span>
+            <button class="tide-pause" id="tide-pause" type="button" aria-label="Pause tide animation" aria-pressed="false" title="Pause tide animation">
+              <span aria-hidden="true">Ⅱ</span>
+            </button>
+          </div>
+        </div>
+        <span class="tide-vertical" aria-hidden="true">12°34′ S — 38°00′ W</span>
+      </section>
+
+      <section class="spirit-section" aria-labelledby="spirit-title">
+        <div class="section-shell spirit-head reveal">
+          <p class="eyebrow">The rhythm of Bahia / 04</p>
+          <h2 id="spirit-title">Come as you are.<br /><em>Leave a little different.</em></h2>
+        </div>
+        <div class="spirit-grid section-shell">
+          <article class="spirit-item reveal">
+            <div class="spirit-image">
+              <img src="assets/raw-09.png" alt="Bahian drummer in colorful dress" loading="lazy" />
+            </div>
+            <span>01 /</span>
+            <h3>Local rhythms</h3>
+            <p>Feel the heartbeat of a place that never forgets its roots.</p>
+          </article>
+          <article class="spirit-item reveal">
+            <div class="spirit-image">
+              <img src="assets/raw-14.png" alt="Colorful macaw spreading its wings" loading="lazy" />
+            </div>
+            <span>02 /</span>
+            <h3>Wild encounters</h3>
+            <p>Meet the extraordinary life that calls this coast home.</p>
+          </article>
+          <article class="spirit-item reveal">
+            <div class="spirit-image">
+              <img src="assets/raw-10.png" alt="Bahian woman in traditional colorful clothing" loading="lazy" />
+            </div>
+            <span>03 /</span>
+            <h3>Living culture</h3>
+            <p>Discover stories and traditions shared from one generation to the next.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="experiences-section section-shell" id="experiences" aria-labelledby="experiences-title">
+        <div class="section-heading reveal">
+          <div>
+            <p class="eyebrow">Choose your own adventure / 05</p>
+            <h2 id="experiences-title">The good stuff <em>starts here.</em></h2>
+          </div>
+          <p>Thoughtfully curated experiences, guided by the people who know them best.</p>
+        </div>
+        <div class="filter-bar" role="group" aria-label="Filter experiences">
+          <button type="button" class="filter-button is-active" data-filter="all" aria-pressed="true">All experiences <span>06</span></button>
+          <button type="button" class="filter-button" data-filter="sea" aria-pressed="false">Ocean & wildlife</button>
+          <button type="button" class="filter-button" data-filter="local" aria-pressed="false">Local life</button>
+          <button type="button" class="filter-button" data-filter="nature" aria-pressed="false">Nature & adventure</button>
+        </div>
+        <div class="experience-grid" id="experience-grid">
+          <article class="experience-card reveal" data-category="sea" data-id="turtle">
+            <button type="button" class="card-hit" data-open="turtle" aria-label="Explore Turtle Tour">
+              <span class="card-image-wrap"><img class="card-image" src="assets/turtle.png" alt="Sea turtle swimming in clear blue water" loading="lazy" /></span
+              ><span class="card-content"
+                ><span class="card-topline"><span>OCEAN & WILDLIFE</span><span>01 / 06</span></span
+                ><strong>Turtle Tour</strong><span class="card-description">Meet the ocean's oldest travelers and the people who protect them.</span
+                ><span class="card-bottom"
+                  ><span>3 HOURS <b>•</b> FROM $45</span><span class="card-arrow" aria-hidden="true">↗</span></span
+                ></span
+              >
+            </button>
+          </article>
+          <article class="experience-card reveal" data-category="local" data-id="fishing">
+            <button type="button" class="card-hit" data-open="fishing" aria-label="Explore Local Fishing">
+              <span class="card-image-wrap"><img class="card-image" src="assets/fishing.png" alt="Local fisherman casting a net at sunset" loading="lazy" /></span
+              ><span class="card-content"
+                ><span class="card-topline"><span>LOCAL LIFE</span><span>02 / 06</span></span
+                ><strong>Local Fishing</strong><span class="card-description">Learn the traditions of the sea, side by side with local fishers.</span
+                ><span class="card-bottom"
+                  ><span>HALF DAY <b>•</b> FROM $85</span><span class="card-arrow" aria-hidden="true">↗</span></span
+                ></span
+              >
+            </button>
+          </article>
+          <article class="experience-card reveal" data-category="local" data-id="eating">
+            <button type="button" class="card-hit" data-open="eating" aria-label="Explore Local Eating">
+              <span class="card-image-wrap"><img class="card-image" src="assets/food.png" alt="Bahian seafood meal by the beach" loading="lazy" /></span
+              ><span class="card-content"
+                ><span class="card-topline"><span>LOCAL LIFE</span><span>03 / 06</span></span
+                ><strong>Local Eating</strong><span class="card-description">Taste Bahia, one family recipe and ocean view at a time.</span
+                ><span class="card-bottom"
+                  ><span>2 HOURS <b>•</b> FROM $60</span><span class="card-arrow" aria-hidden="true">↗</span></span
+                ></span
+              >
+            </button>
+          </article>
+          <article class="experience-card reveal" data-category="nature" data-id="beach">
+            <button type="button" class="card-hit" data-open="beach" aria-label="Explore Beach and Nature Tours">
+              <span class="card-image-wrap"><img class="card-image" src="assets/beach.png" alt="Palm-lined tropical beach" loading="lazy" /></span
+              ><span class="card-content"
+                ><span class="card-topline"><span>NATURE & ADVENTURE</span><span>04 / 06</span></span
+                ><strong>Beach & Nature</strong><span class="card-description">Find your own stretch of sand beyond the familiar route.</span
+                ><span class="card-bottom"
+                  ><span>FULL DAY <b>•</b> FROM $75</span><span class="card-arrow" aria-hidden="true">↗</span></span
+                ></span
+              >
+            </button>
+          </article>
+          <article class="experience-card reveal" data-category="local" data-id="living">
+            <button type="button" class="card-hit" data-open="living" aria-label="Explore Local Living">
+              <span class="card-image-wrap"><img class="card-image" src="assets/village.png" alt="Colorful streets of a Bahian village" loading="lazy" /></span
+              ><span class="card-content"
+                ><span class="card-topline"><span>LOCAL LIFE</span><span>05 / 06</span></span
+                ><strong>Local Living</strong><span class="card-description">Step into the everyday beauty of the village and its people.</span
+                ><span class="card-bottom"
+                  ><span>3 HOURS <b>•</b> FROM $40</span><span class="card-arrow" aria-hidden="true">↗</span></span
+                ></span
+              >
+            </button>
+          </article>
+          <article class="experience-card reveal" data-category="nature" data-id="gems">
+            <button type="button" class="card-hit" data-open="gems" aria-label="Explore Hidden Gems">
+              <span class="card-image-wrap"><img class="card-image" src="assets/waterfall.png" alt="Waterfall and natural pool in the forest" loading="lazy" /></span
+              ><span class="card-content"
+                ><span class="card-topline"><span>NATURE & ADVENTURE</span><span>06 / 06</span></span
+                ><strong>Hidden Gems</strong><span class="card-description">Venture beyond the obvious, to the places locals keep close.</span
+                ><span class="card-bottom"
+                  ><span>6 HOURS <b>•</b> FROM $90</span><span class="card-arrow" aria-hidden="true">↗</span></span
+                ></span
+              >
+            </button>
+          </article>
+        </div>
+        <p class="empty-results" id="empty-results" hidden>No experiences match this filter yet.</p>
+      </section>
+
+      <section class="feature-section" aria-labelledby="feature-title">
+        <div class="feature-photo">
+          <img src="assets/activity-whales.jpg" alt="Boat trip for whale watching in Bahia" loading="lazy" />
+        </div>
+        <div class="feature-copy reveal">
+          <p class="eyebrow eyebrow-light">A moment worth remembering</p>
+          <h2 id="feature-title">When the sun sets,<br /><em>the story begins.</em></h2>
+          <p>Start with a local conservation talk, then head out by boat with specialist guides for a whale watching experience shaped by the sea.</p>
+          <div class="feature-facts"><span>06 HOURS</span><span>BOAT TRIP</span><span>SPECIALIST GUIDE</span></div>
+          <button class="pill-link" type="button" data-open="baleias">Discover the whale experience <span aria-hidden="true">↗</span></button>
+        </div>
+      </section>
+
+      <section class="last-word section-shell" aria-labelledby="last-word-title">
+        <p class="eyebrow reveal">Until we meet in Bahia</p>
+        <h2 id="last-word-title" class="reveal">The best way to know a place<br />is to <em>feel at home in it.</em></h2>
+        <a class="button button-orange reveal" href="#experiences">Make some memories <span aria-hidden="true">↗</span></a>
+      </section>
+    </main>
+
+    <footer class="site-footer" id="contact">
+      <div class="footer-main section-shell">
+        <div class="footer-brand">
+          <span class="footer-logo">PRAIA DO FORTE<small>TURISMO</small></span>
+          <p>Authentic Bahia tours and experiences, made local from the very beginning.</p>
+        </div>
+        <div class="footer-explore">
+          <h3>Explore</h3>
+          <a href="#about">Our story</a><a href="#discover">Discover Bahia</a><a href="#experiences">Experiences</a>
+        </div>
+        <div class="footer-contact">
+          <h3>Contact</h3>
+          <p>Praia do Forte<br />Condomínio Porto das Baleias, Mata de São João - BA, 48280-000, Brasil</p>
+          <a href="mailto:contato@praiadoforteturismo.com.br">contato@praiadoforteturismo.com.br</a><a href="tel:+55 71 9684-6763">+55 71 9684-6763</a>
+        </div>
+        <div class="footer-stamp">
+          <span>BAHIA<br />IS CALLING</span><small>12°34′ S<br />38°00′ W</small>
+        </div>
+        <aside class="footer-social" aria-labelledby="ig-title">
+          <svg class="ig-sprite" aria-hidden="true" focusable="false">
+            <symbol id="ig-heart" viewBox="0 0 24 24"><path d="M12 20s-7.5-4.6-7.5-10.2A4.2 4.2 0 0 1 12 7.2a4.2 4.2 0 0 1 7.5 2.6C19.5 15.4 12 20 12 20z" /></symbol>
+            <symbol id="ig-comment" viewBox="0 0 24 24"><path d="M20 11.5a8 8 0 0 1-11.7 7.1L4 19.8l1.2-4A8 8 0 1 1 20 11.5z" /></symbol>
+            <symbol id="ig-save" viewBox="0 0 24 24"><path d="M6.5 3.5h11v17L12 16.2l-5.5 4.3z" /></symbol>
+          </svg>
+          <div class="ig-head">
+            <div>
+              <h3 id="ig-title" class="ig-title">Latest updates</h3>
+              <span class="ig-handle">@praiadoforteturismo</span>
+            </div>
+            <a class="ig-follow" href="https://www.instagram.com/praiadoforteturismo/" target="_blank" rel="noopener">Follow us on Instagram <span aria-hidden="true">↗</span></a>
+          </div>
+          <div class="ig-track" tabindex="0" aria-label="Recent Instagram posts">
+            <a class="ig-post" href="https://www.instagram.com/praiadoforteturismo/" target="_blank" rel="noopener">
+              <span class="ig-post-head"><span class="ig-avatar"><img src="assets/raw-02.png" alt="" /></span><span class="ig-name">praiadoforteturismo</span></span>
+              <span class="ig-post-media"><img src="assets/instagram/ig-01.png" alt="Instagram post: The art of living local. Aerial view of palm trees and turquoise sea at Praia do Forte" width="275" height="380" loading="lazy" /></span>
+              <span class="ig-post-actions" aria-hidden="true"><svg><use href="#ig-heart" /></svg><svg><use href="#ig-comment" /></svg><svg><use href="#ig-save" /></svg></span>
+            </a>
+            <a class="ig-post" href="https://www.instagram.com/praiadoforteturismo/" target="_blank" rel="noopener">
+              <span class="ig-post-head"><span class="ig-avatar"><img src="assets/raw-02.png" alt="" /></span><span class="ig-name">praiadoforteturismo</span></span>
+              <span class="ig-post-media"><img src="assets/instagram/ig-02.png" alt="Fisherman in a canoe on a calm mangrove river, with woven fish traps on the shore" width="275" height="380" loading="lazy" /></span>
+              <span class="ig-post-actions" aria-hidden="true"><svg><use href="#ig-heart" /></svg><svg><use href="#ig-comment" /></svg><svg><use href="#ig-save" /></svg></span>
+            </a>
+            <a class="ig-post" href="https://www.instagram.com/praiadoforteturismo/" target="_blank" rel="noopener">
+              <span class="ig-post-head"><span class="ig-avatar"><img src="assets/raw-02.png" alt="" /></span><span class="ig-name">praiadoforteturismo</span></span>
+              <span class="ig-post-media"><img src="assets/instagram/ig-03.png" alt="Instagram post: Local life, fishing traditions. A fisherman paddling a wooden canoe" width="275" height="380" loading="lazy" /></span>
+              <span class="ig-post-actions" aria-hidden="true"><svg><use href="#ig-heart" /></svg><svg><use href="#ig-comment" /></svg><svg><use href="#ig-save" /></svg></span>
+            </a>
+            <a class="ig-post" href="https://www.instagram.com/praiadoforteturismo/" target="_blank" rel="noopener">
+              <span class="ig-post-head"><span class="ig-avatar"><img src="assets/raw-02.png" alt="" /></span><span class="ig-name">praiadoforteturismo</span></span>
+              <span class="ig-post-media"><img src="assets/instagram/ig-04.png" alt="Group of travelers posing with surfboards on the beach" width="275" height="380" loading="lazy" /></span>
+              <span class="ig-post-actions" aria-hidden="true"><svg><use href="#ig-heart" /></svg><svg><use href="#ig-comment" /></svg><svg><use href="#ig-save" /></svg></span>
+            </a>
+            <a class="ig-post" href="https://www.instagram.com/praiadoforteturismo/" target="_blank" rel="noopener">
+              <span class="ig-post-head"><span class="ig-avatar"><img src="assets/raw-02.png" alt="" /></span><span class="ig-name">praiadoforteturismo</span></span>
+              <span class="ig-post-media"><img src="assets/instagram/ig-05.png" alt="Instagram post: Activities for every traveler. A surfer carving through a wave" width="275" height="380" loading="lazy" /></span>
+              <span class="ig-post-actions" aria-hidden="true"><svg><use href="#ig-heart" /></svg><svg><use href="#ig-comment" /></svg><svg><use href="#ig-save" /></svg></span>
+            </a>
+            <a class="ig-post" href="https://www.instagram.com/praiadoforteturismo/" target="_blank" rel="noopener">
+              <span class="ig-post-head"><span class="ig-avatar"><img src="assets/raw-02.png" alt="" /></span><span class="ig-name">praiadoforteturismo</span></span>
+              <span class="ig-post-media"><img src="assets/instagram/ig-06.png" alt="Musicians in straw hats playing drums at a local celebration" width="275" height="380" loading="lazy" /></span>
+              <span class="ig-post-actions" aria-hidden="true"><svg><use href="#ig-heart" /></svg><svg><use href="#ig-comment" /></svg><svg><use href="#ig-save" /></svg></span>
+            </a>
+            <a class="ig-post" href="https://www.instagram.com/praiadoforteturismo/" target="_blank" rel="noopener">
+              <span class="ig-post-head"><span class="ig-avatar"><img src="assets/raw-02.png" alt="" /></span><span class="ig-name">praiadoforteturismo</span></span>
+              <span class="ig-post-media"><img src="assets/instagram/ig-07.png" alt="Instagram post: Discover our marine life. A diver and an angelfish over a coral reef" width="275" height="380" loading="lazy" /></span>
+              <span class="ig-post-actions" aria-hidden="true"><svg><use href="#ig-heart" /></svg><svg><use href="#ig-comment" /></svg><svg><use href="#ig-save" /></svg></span>
+            </a>
+            <a class="ig-post" href="https://www.instagram.com/praiadoforteturismo/" target="_blank" rel="noopener">
+              <span class="ig-post-head"><span class="ig-avatar"><img src="assets/raw-02.png" alt="" /></span><span class="ig-name">praiadoforteturismo</span></span>
+              <span class="ig-post-media"><img src="assets/instagram/ig-08.png" alt="Local cook preparing tapioca on a large hot griddle" width="275" height="380" loading="lazy" /></span>
+              <span class="ig-post-actions" aria-hidden="true"><svg><use href="#ig-heart" /></svg><svg><use href="#ig-comment" /></svg><svg><use href="#ig-save" /></svg></span>
+            </a>
+            <a class="ig-post" href="https://www.instagram.com/praiadoforteturismo/" target="_blank" rel="noopener">
+              <span class="ig-post-head"><span class="ig-avatar"><img src="assets/raw-02.png" alt="" /></span><span class="ig-name">praiadoforteturismo</span></span>
+              <span class="ig-post-media"><img src="assets/instagram/ig-09.png" alt="Instagram post: Local food. A platter of red crabs with fresh herbs" width="275" height="380" loading="lazy" /></span>
+              <span class="ig-post-actions" aria-hidden="true"><svg><use href="#ig-heart" /></svg><svg><use href="#ig-comment" /></svg><svg><use href="#ig-save" /></svg></span>
+            </a>
+            <a class="ig-post" href="https://www.instagram.com/praiadoforteturismo/" target="_blank" rel="noopener">
+              <span class="ig-post-head"><span class="ig-avatar"><img src="assets/raw-02.png" alt="" /></span><span class="ig-name">praiadoforteturismo</span></span>
+              <span class="ig-post-media"><img src="assets/instagram/ig-10.png" alt="Hands playing traditional Bahian drums" width="275" height="380" loading="lazy" /></span>
+              <span class="ig-post-actions" aria-hidden="true"><svg><use href="#ig-heart" /></svg><svg><use href="#ig-comment" /></svg><svg><use href="#ig-save" /></svg></span>
+            </a>
+            <a class="ig-post" href="https://www.instagram.com/praiadoforteturismo/" target="_blank" rel="noopener">
+              <span class="ig-post-head"><span class="ig-avatar"><img src="assets/raw-02.png" alt="" /></span><span class="ig-name">praiadoforteturismo</span></span>
+              <span class="ig-post-media"><img src="assets/instagram/ig-11.png" alt="Local fishermen mending a net on a palm-lined beach" width="275" height="380" loading="lazy" /></span>
+              <span class="ig-post-actions" aria-hidden="true"><svg><use href="#ig-heart" /></svg><svg><use href="#ig-comment" /></svg><svg><use href="#ig-save" /></svg></span>
+            </a>
+            <a class="ig-post" href="https://www.instagram.com/praiadoforteturismo/" target="_blank" rel="noopener">
+              <span class="ig-post-head"><span class="ig-avatar"><img src="assets/raw-02.png" alt="" /></span><span class="ig-name">praiadoforteturismo</span></span>
+              <span class="ig-post-media"><img src="assets/instagram/ig-12.png" alt="Smiling locals in colorful Bahian clothing sitting together" width="275" height="380" loading="lazy" /></span>
+              <span class="ig-post-actions" aria-hidden="true"><svg><use href="#ig-heart" /></svg><svg><use href="#ig-comment" /></svg><svg><use href="#ig-save" /></svg></span>
+            </a>
+          </div>
+          <div class="ig-controls">
+            <span class="ig-progress" aria-hidden="true"><span></span></span>
+            <button class="ig-prev" type="button" aria-label="Previous posts">←</button><button class="ig-next" type="button" aria-label="Next posts">→</button>
+          </div>
+        </aside>
+      </div>
+      <div class="footer-bottom section-shell">
+        <span>© <span id="year"></span> PRAIA DO FORTE TURISMO</span><span>TRAVEL GENTLY. FEEL DEEPLY. LEAVE ONLY GOOD STORIES.</span><a href="#top">BACK TO TOP ↑</a>
+      </div>
+    </footer>
+
+    <dialog class="experience-dialog" id="experience-dialog" aria-labelledby="dialog-title">
+      <div class="dialog-layout">
+        <div class="dialog-visual"><img id="dialog-image" src="assets/turtle.png" alt="" /><span class="dialog-image-caption">PRAIA DO FORTE / BAHIA</span></div>
+        <div class="dialog-body">
+          <button class="dialog-close" type="button" data-close="experience-dialog" aria-label="Close experience">×</button>
+          <p class="eyebrow" id="dialog-category">OCEAN & WILDLIFE</p>
+          <h2 id="dialog-title">Turtle Tour</h2>
+          <p class="dialog-description" id="dialog-description"></p>
+          <div class="dialog-facts">
+            <div><span>DURATION</span><strong id="dialog-duration"></strong></div>
+            <div><span>GROUP SIZE</span><strong>Up to 8 people</strong></div>
+            <div><span>PRICE</span><strong id="dialog-price"></strong></div>
+          </div>
+          <h3>What makes it special</h3>
+          <ul id="dialog-highlights"></ul>
+          <div class="dialog-action">
+            <span>Ready to go deeper?</span><button class="button button-orange" id="start-booking" type="button">Plan this experience <span aria-hidden="true">↗</span></button>
+          </div>
+        </div>
+      </div>
+    </dialog>
+
+    <dialog class="booking-dialog" id="booking-dialog" aria-labelledby="booking-title">
+      <div class="booking-shell">
+        <header class="booking-header">
+          <div>
+            <p class="eyebrow">Your next story</p>
+            <h2 id="booking-title">Let's make it happen.</h2>
+          </div>
+          <button class="dialog-close" type="button" data-close="booking-dialog" aria-label="Close booking">×</button>
+        </header>
+        <ol class="booking-steps" aria-label="Booking steps">
+          <li class="is-current">01 <span>Date & guests</span></li>
+          <li>02 <span>Your details</span></li>
+          <li>03 <span>Review</span></li>
+        </ol>
+        <form id="booking-form">
+          <div class="booking-page is-current" data-step="0">
+            <div class="booking-intro">
+              <h3>First, the good details.</h3>
+              <p>Choose a day and tell us who's coming along.</p>
+            </div>
+            <div class="booking-fields">
+              <label>Preferred date<input id="booking-date" name="date" type="date" required /></label
+              ><label
+                >Time<select id="booking-time" name="time" required>
+                  <option value="09:00">Morning · 09:00</option>
+                  <option value="14:00">Afternoon · 14:00</option>
+                  <option value="17:00">Twilight · 17:00</option>
+                </select></label
+              ><label>Travelers<input id="booking-guests" name="guests" type="number" min="1" max="8" value="2" required /></label>
+            </div>
+          </div>
+          <div class="booking-page" data-step="1">
+            <div class="booking-intro">
+              <h3>Who is joining us?</h3>
+              <p>We'll use these details to prepare your experience.</p>
+            </div>
+            <div class="booking-fields">
+              <label>Full name<input id="booking-name" name="name" type="text" autocomplete="name" placeholder="Your name" required /></label
+              ><label>Email address<input id="booking-email" name="email" type="email" autocomplete="email" placeholder="you@example.com" required /></label
+              ><label>Phone number<input id="booking-phone" name="phone" type="tel" autocomplete="tel" placeholder="+55 ..." required /></label>
+            </div>
+          </div>
+          <div class="booking-page" data-step="2">
+            <div class="booking-intro">
+              <h3>One last look.</h3>
+              <p>Review your details before finishing.</p>
+            </div>
+            <div class="booking-review" id="booking-review"></div>
+            <p class="booking-disclaimer">This is a website demo. No reservation is sent and no payment is taken.</p>
+          </div>
+          <div class="booking-page" data-step="3">
+            <div class="booking-success">
+              <span class="success-mark">✓</span>
+              <h3>Your Bahia story is taking shape.</h3>
+              <p>This demonstration is complete. Your details were not sent anywhere.</p>
+              <button type="button" class="button button-orange" data-close="booking-dialog">Back to exploring <span aria-hidden="true">↗</span></button>
+            </div>
+          </div>
+          <div class="booking-actions" id="booking-actions">
+            <button class="booking-back" id="booking-back" type="button">Back</button><button class="button button-orange" id="booking-next" type="button">Continue <span aria-hidden="true">↗</span></button>
+          </div>
+        </form>
+      </div>
+    </dialog>
+  </body>
+</html>

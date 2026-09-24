@@ -1,0 +1,13 @@
+{
+  "name": "team6-sprint2-praia-do-forte",
+  "private": true,
+  "version": "2.0.0",
+  "description": "Praia do Forte tourism website with a TypeScript and GLSL tide experience",
+  "scripts": {
+    "build": "tsc --noEmit && esbuild src/enhancements.ts --bundle --loader:.glsl=text --format=iife --target=es2020 --outfile=enhancements.js"
+  },
+  "devDependencies": {
+    "esbuild": "0.28.2",
+    "typescript": "7.0.2"
+  }
+}
